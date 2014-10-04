@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-    {% block head %}
         <title>Vine - ESP Game</title>
-	<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
-    {% endblock %}
+	    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
     <body>
 
         <div class="container">
+            <h2 id="title">Vine ESP Game</h2>
+            <p id="summary">You have 30 seconds to choose whether you think this vine is funny.  If your team mate agrees with you, you win!
+            </p>
             <div id="vine_window">
-                <iframe class="vine-embed" src="https://vine.co/v/OmIHDMLzWxb/embed/simple" width="600" height="600" frameborder="0"></iframe>
+                <iframe class="vine-embed" width="600" height="600" frameborder="0"></iframe>
                 <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
             </div>
             <div id="controls_div">
-                <button class="control" type="button" id="funny" value="Funny">Funny</button>
-                <button class="control" type="button" id="not_funny" value="Not Funny">Not Funny</button>
+                <button style="float:left;" class="control" type="button" id="funny" value="Funny">Funny</button>
+                <button style="float:right;"class="control" type="button" id="not_funny" value="Not Funny">Not Funny</button>
             </div>
 
         </div>
 
     </body>
+    
+    <script type="text/javascript">
+            
+    </script>
+
 </html>
