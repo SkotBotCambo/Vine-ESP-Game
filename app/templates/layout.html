@@ -4,6 +4,8 @@
         <title>Vine - ESP Game</title>
 	    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/esp-game.js') }}"></script>
+   
     </head>
     <body>
 
@@ -15,17 +17,17 @@
                 <iframe class="vine-embed" width="600" height="600" frameborder="0"></iframe>
                 <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
             </div>
-            <div id="controls_div">
+            <div id="ready">
+                <button id="ready" value="start">Press To Start</button>
+            </div>
+            <div id="controls">
                 <button style="float:left;" class="control" type="button" id="funny" value="Funny">Funny</button>
                 <button style="float:right;"class="control" type="button" id="not_funny" value="Not Funny">Not Funny</button>
             </div>
-
+    
         </div>
-
     </body>
     
-    <script type="text/javascript">
-            
-    </script>
-
+    
+                          
 </html>
