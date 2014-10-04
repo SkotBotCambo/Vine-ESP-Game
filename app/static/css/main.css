@@ -1,0 +1,17 @@
+div.container{
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#aaf;
+}
+
+button.control {
+    width:100px;
+    height:25px;
+}
+
+div#controls_div {
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {% block head %}
+        <title>Vine - ESP Game</title>
+	<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+    {% endblock %}
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="vine_window">
+                <iframe class="vine-embed" src="https://vine.co/v/OmIHDMLzWxb/embed/simple" width="600" height="600" frameborder="0"></iframe>
+                <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+            </div>
+            <div id="controls_div">
+                <button class="control" type="button" id="funny" value="Funny">Funny</button>
+                <button class="control" type="button" id="not_funny" value="Not Funny">Not Funny</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>
