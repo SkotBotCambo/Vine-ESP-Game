@@ -6,7 +6,7 @@ $( document ).ready(function() {
     $.ajax({
         url: vine_url,
         type: 'GET',
-        headers:
+        //headers:
             
         success:function( result ){
             

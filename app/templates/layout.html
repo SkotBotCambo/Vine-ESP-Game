@@ -10,22 +10,29 @@
     <body>
 
         <div class="container">
-            <h2 id="title">Vine ESP Game</h2>
-            <p id="summary">You have 30 seconds to choose whether you think this vine is funny.  If your team mate agrees with you, you win!
-            </p>
-            <div id="vine_window">
-                <iframe class="vine-embed" width="600" height="600" frameborder="0"></iframe>
-                <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+            <div class="left">
+                <img class="avatar" src="https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/Avatar-512.png"/>
+                <h2>You</h2>
             </div>
-            <div id="ready">
-                <button id="ready" value="start">Press To Start</button>
+           <div class="main">
+                <h2 id="title">Vine ESP Game</h2>
+                <p id="summary">You have 30 seconds to choose whether you think this vine is funny.  If your team mate agrees with you, you win!
+                </p>
+                <h3>Current Streak: 0</h3>
+                <div id="vine_window">
+                    <iframe class="vine-embed" width="480" height="480" frameborder="0"></iframe>
+                    <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+                </div>
+                <div id="controls_div">
+                    <button style="float:left;" class="positive" type="button" id="funny" value="Funny">Funny</button>
+                    <button style="float:right;"class="negative" type="button" id="not_funny" value="Not Funny">Not Funny</button>
+                </div>
             </div>
-            <div id="controls">
-                <button style="float:left;" class="control" type="button" id="funny" value="Funny">Funny</button>
-                <button style="float:right;"class="control" type="button" id="not_funny" value="Not Funny">Not Funny</button>
+            <div class="right">
+                <img class="avatar" src="https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/Avatar-512.png"/>
+                <h2>Other Player</h2>
             </div>
-    
-        </div>
+       </div>
     </body>
     
     
