@@ -14,12 +14,15 @@
             <div class="left">
                 <img class="avatar" src="https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/Avatar-512.png"/>
                 <h2>You</h2>
+                <h2 id="you_choice"></h2>
+                <div id="defense"></div>
             </div>
            <div class="main">
                 <h2 id="title">Vine ESP Game</h2>
                 <p id="summary">You have 30 seconds to choose whether you think this vine is funny.  If your team mate agrees with you, you win!
                 </p>
                 <h3 id="streak">Current Streak: 0</h3>
+                <h3 id="win_lose"></h3>
                 <button class="negative" type="button" id="timer">Click When Ready</button>
                 <div id="vine_window">
                     <!--
@@ -28,13 +31,14 @@
                     <video id="vine_vid" width="480" height="480" loop></video>
                 </div>
                 <div id="controls_div">
-                    <button style="float:left;" class="positive" type="button" id="funny" value="Funny">Funny</button>
-                    <button style="float:right;"class="negative" type="button" id="not_funny" value="Not Funny">Not Funny</button>
+                    <button style="float:left;" class="positive response" type="button" id="funny" value="Funny">Funny</button>
+                    <button style="float:right;"class="negative response" type="button" id="not_funny" value="Not Funny">Not Funny</button>
                 </div>
             </div>
             <div class="right">
                 <img class="avatar" src="https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/Avatar-512.png"/>
                 <h2>Other Player</h2>
+                <h2 id="other_choice"></h2>
             </div>
        </div>
     </body>
