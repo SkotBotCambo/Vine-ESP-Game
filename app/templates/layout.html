@@ -4,6 +4,7 @@
         <title>Vine - ESP Game</title>
 	    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/countdown.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/esp-game.js') }}"></script>
    
     </head>
@@ -18,10 +19,13 @@
                 <h2 id="title">Vine ESP Game</h2>
                 <p id="summary">You have 30 seconds to choose whether you think this vine is funny.  If your team mate agrees with you, you win!
                 </p>
-                <h3>Current Streak: 0</h3>
+                <h3 id="streak">Current Streak: 0</h3>
+                <button class="negative" type="button" id="timer">Click When Ready</button>
                 <div id="vine_window">
+                    <!--
                     <iframe class="vine-embed" width="480" height="480" frameborder="0"></iframe>
-                    <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+                    -->
+                    <video id="vine_vid" width="480" height="480" loop></video>
                 </div>
                 <div id="controls_div">
                     <button style="float:left;" class="positive" type="button" id="funny" value="Funny">Funny</button>
